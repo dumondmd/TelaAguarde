@@ -1,99 +1,97 @@
 
 <html>
 
-<head>
-	<title>Tela de Aguarde</title>
-	<style type="text/css">
+    <head>
+        <title>Tela de Aguarde</title>
+        <style type="text/css">
 
-		#telaAguarde {
-			position: absolute;
-			left: 40%;
-			z-index: 9999999;
-			width: 200px;
-			background-color: #f7f8ff;
-            border: 2px solid #9C9DBC;
-            top: 150px;
-            display: none;
-		}       
+            #telaAguarde {
+                position: absolute;
+                left: 40%;
+                z-index: 9999999;
+                width: 200px;
+                background-color: #f7f8ff;
+                border: 2px solid #9C9DBC;
+                top: 150px;
+                display: none;
+            }       
 
-		#textoAguarde {
-			text-align: center;
-			font-size: 40px;
-			font-family: lato, arial, sans-serif;
-			font-weight: bold;
-			color: #0090ff;
-		}
+            #textoAguarde {
+                text-align: center;
+                font-size: 40px;
+                font-family: lato, arial, sans-serif;
+                font-weight: bold;
+                color: #0090ff;
+            }
 
-		#imagemAguarde {
-        	margin-top: 11px;
-            margin-left: 47px;
-		}
+            #imagemAguarde {
+                margin-top: 11px;
+                margin-left: 47px;
+            }
 
-        #telaInvisivel{
-        	position: absolute;
-        	width: 100%;
-        	height: 100%;
-        	z-index: 9999998;
-        	display: none;
-        }
-	</style>
-</head>
-
-
-
-
-
-<body>
-
-	<div id="telaAguarde">	
-		<img id="imagemAguarde" src="carregando.gif" height="100px" width="100px">
-		<p id="textoAguarde">Aguarde</p>
-	</div>
-
-    <div id="telaInvisivel">    
-    </div>
-
-
-<!--pointer-events: none;-->
-	<button onclick="abrirAguarde()">Abrir</button>
-	<button onclick="fecharAguarde()">Fechar</button>
-
-	<script type="text/javascript">
-		
-		function abrirAguarde() {
-	    	document.getElementById('telaAguarde').style.display = 'block';
-	    	document.getElementById('telaInvisivel').style.display = 'block';
-	    	document.getElementById('conteudo').style.opacity = '0.1';
-       
-	
-	    }
-
-	    function fecharAguarde() {
-	    	document.getElementById('telaAguarde').style.display = 'none';
-	    	document.getElementById('telaInvisivel').style.display = 'none';
-	    	document.getElementById('conteudo').style.opacity = '1';	    	
-	    }
-
-
-	</script>
+            #telaInvisivel{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 9999998;
+                display: none;
+            }
+        </style>
+    </head>
 
 
 
 
 
-    <div id="conteudo"> 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl tortor, egestas sed dolor eget, semper sodales tortor. Nam pharetra fringilla quam, ut fringilla purus faucibus vel. Curabitur a vestibulum libero. Etiam pellentesque tempus faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer laoreet nibh mauris, in gravida nisl sollicitudin eleifend. Sed cursus, nisl eu viverra porta, erat risus iaculis urna, non dapibus arcu nulla eu neque. Nunc imperdiet nulla justo, sed vulputate nisi imperdiet sit amet. In molestie hendrerit velit id tempus. Nunc ligula dui, rutrum ac pharetra quis, volutpat at augue. Nulla vitae tortor quis orci ultrices imperdiet.</p>
+    <body>
 
-	<p>Donec pellentesque elit in luctus rutrum. Nam eu justo magna. Praesent ut neque porta elit dictum rutrum sit amet facilisis mi. Morbi fringilla leo tortor, ut iaculis sapien luctus sit amet. Cras interdum turpis in pharetra euismod. Mauris ut imperdiet ipsum, at vulputate lorem. Pellentesque a tristique turpis, sed ullamcorper leo. Ut at ligula commodo ante eleifend ultricies sed nec sapien. Morbi turpis libero, auctor eu massa eget, condimentum sollicitudin ex. In in sollicitudin sapien. Maecenas tempor auctor quam non ornare. Maecenas mauris ipsum, eleifend vel scelerisque vel, hendrerit eu leo.</p>
+        <div id="telaAguarde">	
+            <img id="imagemAguarde" src="carregando.gif" height="100" width="100">
+            <p id="textoAguarde">Aguarde</p>
+        </div>
 
-	<p>Nunc tincidunt nunc magna, non iaculis magna convallis vitae. Sed at tellus orci. In efficitur consectetur sapien, egestas luctus ipsum lobortis vel. Fusce volutpat iaculis neque ut finibus. Donec maximus suscipit maximus. Praesent vitae ante eu felis porta condimentum id vitae erat. Phasellus eleifend est elit, id sagittis arcu placerat vel. Sed at justo efficitur, ultricies lacus vitae, imperdiet sem. Nulla sagittis molestie erat sit amet porta. Donec nunc metus, condimentum ut ipsum eu, pellentesque tincidunt nisl.</p>
-
-	<p>Curabitur id scelerisque turpis. Ut quis urna et justo venenatis accumsan. Maecenas in sapien gravida, elementum nibh sit amet, semper risus. Aliquam varius sem quis sagittis posuere. Nulla facilisi. Mauris elementum pulvinar neque in congue. Duis nec rutrum justo. Quisque malesuada tincidunt tellus, vel dignissim augue.
-
-	<p>Vestibulum feugiat arcu nec sem vulputate, id blandit urna bibendum. Nam velit massa, feugiat sed ultricies et, tristique ac sapien. Phasellus ligula massa, venenatis ullamcorper tincidunt laoreet, facilisis quis nunc. Pellentesque facilisis aliquam magna, venenatis varius dolor aliquet non. Phasellus finibus velit sit amet est venenatis dapibus. In hac habitassplatea dictumst. Sed gravida laoreet ligula, at fermentum diam dictum ut. Nullam sapien est, facilisis et porttitor ut, ultrices quis elit. Mauris vestibulum placerat laoreet. Donec eget</p>
-    </div>
+        <div id="telaInvisivel">    
+        </div>
 
 
+        <!--pointer-events: none;-->
+        <button onclick="abrirAguarde()">Abrir</button>
+        <button onclick="fecharAguarde()">Fechar</button>
+
+        <script type="text/javascript">
+
+            function abrirAguarde() {
+                document.getElementById('telaAguarde').style.display = 'block';
+                document.getElementById('telaInvisivel').style.display = 'block';
+                document.getElementById('conteudo').style.opacity = '0.1';
+
+
+            }
+
+            function fecharAguarde() {
+                document.getElementById('telaAguarde').style.display = 'none';
+                document.getElementById('telaInvisivel').style.display = 'none';
+                document.getElementById('conteudo').style.opacity = '1';
+            }
+
+
+        </script>
+
+
+
+
+
+        <div id="conteudo"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl tortor, egestas sed dolor eget, semper sodales tortor. Nam pharetra fringilla quam, ut fringilla purus faucibus vel. Curabitur a vestibulum libero. Etiam pellentesque tempus faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer laoreet nibh mauris, in gravida nisl sollicitudin eleifend. Sed cursus, nisl eu viverra porta, erat risus iaculis urna, non dapibus arcu nulla eu neque. Nunc imperdiet nulla justo, sed vulputate nisi imperdiet sit amet. In molestie hendrerit velit id tempus. Nunc ligula dui, rutrum ac pharetra quis, volutpat at augue. Nulla vitae tortor quis orci ultrices imperdiet.</p>
+
+            <p>Donec pellentesque elit in luctus rutrum. Nam eu justo magna. Praesent ut neque porta elit dictum rutrum sit amet facilisis mi. Morbi fringilla leo tortor, ut iaculis sapien luctus sit amet. Cras interdum turpis in pharetra euismod. Mauris ut imperdiet ipsum, at vulputate lorem. Pellentesque a tristique turpis, sed ullamcorper leo. Ut at ligula commodo ante eleifend ultricies sed nec sapien. Morbi turpis libero, auctor eu massa eget, condimentum sollicitudin ex. In in sollicitudin sapien. Maecenas tempor auctor quam non ornare. Maecenas mauris ipsum, eleifend vel scelerisque vel, hendrerit eu leo.</p>
+
+            <p>Nunc tincidunt nunc magna, non iaculis magna convallis vitae. Sed at tellus orci. In efficitur consectetur sapien, egestas luctus ipsum lobortis vel. Fusce volutpat iaculis neque ut finibus. Donec maximus suscipit maximus. Praesent vitae ante eu felis porta condimentum id vitae erat. Phasellus eleifend est elit, id sagittis arcu placerat vel. Sed at justo efficitur, ultricies lacus vitae, imperdiet sem. Nulla sagittis molestie erat sit amet porta. Donec nunc metus, condimentum ut ipsum eu, pellentesque tincidunt nisl.</p>
+
+            <p>Curabitur id scelerisque turpis. Ut quis urna et justo venenatis accumsan. Maecenas in sapien gravida, elementum nibh sit amet, semper risus. Aliquam varius sem quis sagittis posuere. Nulla facilisi. Mauris elementum pulvinar neque in congue. Duis nec rutrum justo. Quisque malesuada tincidunt tellus, vel dignissim augue.
+
+            <p>Vestibulum feugiat arcu nec sem vulputate, id blandit urna bibendum. Nam velit massa, feugiat sed ultricies et, tristique ac sapien. Phasellus ligula massa, venenatis ullamcorper tincidunt laoreet, facilisis quis nunc. Pellentesque facilisis aliquam magna, venenatis varius dolor aliquet non. Phasellus finibus velit sit amet est venenatis dapibus. In hac habitassplatea dictumst. Sed gravida laoreet ligula, at fermentum diam dictum ut. Nullam sapien est, facilisis et porttitor ut, ultrices quis elit. Mauris vestibulum placerat laoreet. Donec eget</p>
+        </div>
 
 
 
@@ -103,33 +101,10 @@
 
 
 
-</body>
+
+
+    </body>
 </html>
 
-
-
-<!--<!DOCTYPE html>
-<html>
-<body>
-
-<p>Escolha um botão:</p>
-
-<button onclick="abrir()">Abrir</button>
-<button onclick="fechar()">Fechar</button>
-
-
-<script>
-function abrir() {
-    alert("Aberto");
-}
-
-function fechar() {
-    alert("Fechado");
-}
-</script>
-
-</body>
-</html>
--->
 
 
